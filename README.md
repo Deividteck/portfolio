@@ -57,6 +57,7 @@ Jogo de tentativa e erro com número aleatório e limite de tentativas.
 
 ```id="p4t8s2"
 git clone https://github.com/Deividteck/portfolio.git
+https://deividteck.github.io/portfolio/
 cd portfolio
 ```
 
