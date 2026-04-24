@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Deivid</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img src="images/minha-foto.png" class="profile">
+
+  <h1>Deivid Da Silva Santos</h1>
+  <p>Desenvolvedor Fullstack • Node.js</p>
+
+  <a href="https://github.com/Deividteck" target="_blank" class="btn">
+    🔗 Meu GitHub
+  </a>
+</header>
+
+<section class="about">
+  <h2>Sobre Mim</h2>
+  <p>
+    Desenvolvedor em formação com foco em backend utilizando Node.js. 
+    Possuo experiência no desenvolvimento de APIs REST, autenticação com JWT e integração com banco de dados MySQL.
+    Também atuo no desenvolvimento frontend, criando interfaces responsivas e funcionais.
+    Busco minha primeira oportunidade na área de tecnologia para aplicar e evoluir meus conhecimentos.
+  </p>
+</section>
+
+<section class="info">
+  <h2>Formação</h2>
+  <p>📚 Fatec Itaquera</p>
+  <p>💻 Desenvolvimento de Software Multiplataforma</p>
+  <p>📅 Início: 2023</p>
+  <p>🎓 Previsão de conclusão: 2026</p>
+</section>
+
+<section class="info">
+  <h2>Experiência</h2>
+  <p>Atualmente em busca da primeira oportunidade na área de desenvolvimento de software.</p>
+</section>
+
+<section class="info">
+  <h2>Cursos</h2>
+  <p>JavaScript Completo - Udemy (40h) - 2025</p>
+  <p>Node.js e APIs REST - Alura (30h) - 2025</p>
+  <p>Banco de Dados MySQL - Curso Online (20h) - 2025</p>
+</section>
+
+<section class="info">
+  <h2>Idiomas</h2>
+  <p>Português: Nativo</p>
+  <p>Inglês: intermediario</p>
+</section>
+
+<section class="projects">
+
+  <div class="card" onclick="showProject(0)">
+    <img src="images/projeto1.png">
+    <div class="overlay">BPG Store</div>
+  </div>
+
+  <div class="card" onclick="showProject(1)">
+    <img src="images/projeto2.png">
+    <div class="overlay">Projeto Aparecida</div>
+  </div>
+
+  <div class="card" onclick="showProject(2)">
+    <img src="images/projeto3.png">
+    <div class="overlay">Loja de Brinquedos</div>
+  </div>
+
+  <div class="card" onclick="showProject(3)">
+    <img src="images/projeto4.png">
+    <div class="overlay">Pizzaria</div>
+  </div>
+
+  <div class="card" onclick="showProject(4)">
+    <img src="images/projeto5.png">
+    <div class="overlay">Campo Minado</div>
+  </div>
+
+</section>
+
+<section id="details" class="details">
+  <p>Selecione um projeto</p>
+</section>
+
+<footer>
+  <p>© 2026 • Deivid Santos</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
