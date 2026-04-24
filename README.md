@@ -49,7 +49,7 @@ Jogo de tentativa e erro com número aleatório e limite de tentativas.
 ## 📸 Preview do Portfolio
 
 
-<img width="1380" height="1400" alt="minha-foto" src="https://github.com/user-attachments/assets/8d9b3602-a8ee-4e86-aca1-ae4ecb2f03b0" />
+<img width="500" height="600" alt="minha-foto" src="https://github.com/user-attachments/assets/8d9b3602-a8ee-4e86-aca1-ae4ecb2f03b0" />
 
 ---
 
