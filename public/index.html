@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Deivid</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="profile">
+    <img src="images/minha-foto.png" alt="Minha foto">
+  </div>
+
+  <h1>Deivid</h1>
+  <p>Desenvolvedor Fullstack • Node.js</p>
+</header>
+
+<section class="projects">
+
+  <div class="card" onclick="showProject(0)">
+    <img src="images/projeto1.png">
+    <div class="overlay">BPG Store</div>
+  </div>
+
+  <div class="card" onclick="showProject(1)">
+    <img src="images/projeto2.png">
+    <div class="overlay">Aparecida</div>
+  </div>
+
+  <div class="card" onclick="showProject(2)">
+    <img src="images/projeto3.png">
+    <div class="overlay">Brinquedos</div>
+  </div>
+
+  <div class="card" onclick="showProject(3)">
+    <img src="images/projeto4.png">
+    <div class="overlay">Pizzaria</div>
+  </div>
+
+  <div class="card" onclick="showProject(4)">
+    <img src="images/projeto5.png">
+    <div class="overlay">Campo Minado</div>
+  </div>
+
+</section>
+
+<section id="details" class="details">
+  <p>Selecione um projeto</p>
+</section>
+
+<footer>
+  <p>© 2026 • Deivid</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
