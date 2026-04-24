@@ -1,52 +1,69 @@
 const projects = [
   {
     title: "BPG Store",
-    description: "Sistema completo de gerenciamento de loja com controle de produtos, clientes e autenticação JWT.",
+    description: "Sistema completo de gerenciamento de loja.",
+    tech: "Node.js, Express, MySQL",
+    role: "Desenvolvi backend e autenticação JWT.",
     github: "https://github.com/Byelsantos11/BPG",
     image: "images/projeto1.png"
   },
   {
     title: "Projeto Aparecida",
-    description: "Sistema para gerenciamento de viagens e passagens para igrejas.",
+    description: "Sistema de viagens para igrejas.",
+    tech: "Java, Spring Boot",
+    role: "Backend e estrutura.",
     github: "https://github.com/Deividteck/Pojeto-aparecida",
     image: "images/projeto2.png"
   },
   {
     title: "Loja de Brinquedos",
-    description: "Aplicação web com CRUD completo e integração com banco de dados.",
+    description: "CRUD completo com banco.",
+    tech: "Spring Boot, MySQL",
+    role: "Integração e CRUD.",
     github: "https://github.com/Deividteck/loja-de-brinquedos",
     image: "images/projeto3.png"
   },
   {
     title: "Pizzaria",
-    description: "Sistema web para gerenciamento de pedidos, produtos e clientes.",
+    description: "Sistema de pedidos.",
+    tech: "HTML, CSS, JS",
+    role: "Frontend completo.",
     github: "https://github.com/Deividteck/pizzaria",
     image: "images/projeto4.png"
   },
   {
     title: "Campo Minado",
-    description: "Jogo clássico com lógica de bombas e geração dinâmica.",
+    description: "Jogo de lógica.",
+    tech: "JavaScript",
+    role: "Lógica do jogo.",
     github: "https://github.com/Deividteck/campo-minado",
     image: "images/projeto5.png"
   }
 ];
 
-function showProject(index) {
-  const project = projects[index];
+function showProject(i) {
+  const p = projects[i];
 
-  document.getElementById("details").innerHTML = `
-    
-    <div class="top-detail">
-      <img src="images/minha-foto.png" class="avatar">
-      <span>Deivid</span>
-    </div>
+  const details = document.getElementById("details");
+  details.style.opacity = 0;
 
-    <h2>${project.title}</h2>
+  setTimeout(() => {
+    details.innerHTML = `
+      <div class="top-detail">
+        <img src="images/minha-foto.png" class="avatar">
+        <span>Deivid</span>
+      </div>
 
-    <img src="${project.image}" class="project-image">
+      <h2>${p.title}</h2>
 
-    <p>${project.description}</p>
+      <img src="${p.image}" class="project-image">
 
-    <a href="${project.github}" target="_blank">🔗 Ver no GitHub</a>
-  `;
+      <p>${p.description}</p>
+      <p><strong>Tecnologias:</strong> ${p.tech}</p>
+      <p><strong>Participação:</strong> ${p.role}</p>
+
+      <a href="${p.github}" target="_blank">🔗 Ver no GitHub</a>
+    `;
+    details.style.opacity = 1;
+  }, 200);
 }
