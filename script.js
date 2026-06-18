@@ -46,9 +46,9 @@ const projects = [
 
   {
     title: "EstacioneIoT",
-    description: "Sistema inteligente de monitoramento de vagas de estacionamento utilizando Internet das Coisas (IoT). O sistema detecta automaticamente a ocupação das vagas através de sensores e exibe informações em tempo real para os usuários.",
+    description: "Sistema inteligente de monitoramento de vagas de estacionamento utilizando Internet das Coisas (IoT). O sistema monitora automaticamente a ocupação das vagas através de sensores, permitindo a visualização em tempo real das vagas livres e ocupadas.",
     tech: "Arduino • IoT • Sensores • C++ • HTML • CSS • JavaScript",
-    role: "Responsável pelo desenvolvimento da lógica de monitoramento das vagas, integração entre sensores IoT e aplicação web, além da exibição em tempo real do status das vagas.",
+    role: "Responsável pela integração entre sensores e aplicação web, implementação da lógica de monitoramento das vagas e exibição das informações em tempo real para os usuários.",
     github: "https://github.com/Deividteck",
     image: "images/projeto6.png"
   }
@@ -60,7 +60,7 @@ function showProject(i) {
   document.getElementById("details").innerHTML = `
     <h2>${p.title}</h2>
 
-    <img src="${p.image}" class="project-image">
+    <img src="${p.image}" class="project-image" alt="${p.title}">
 
     <p>${p.description}</p>
 
