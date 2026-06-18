@@ -1,7 +1,7 @@
 # 👨‍💻 Deivid | Desenvolvedor de Software
 
 <p align="center">
-  <img src="public/images/perfil.jpg" alt="Foto de Deivid" width="150" style="border-radius: 50%;" />
+  <img src="https://github.com/user-attachments/assets/c22e1cdd-f1b0-41a5-9916-ad94f0ca83fc" alt="Foto de Deivid" width="150" style="border-radius: 50%;" />
 </p>
 
 <p align="center">
