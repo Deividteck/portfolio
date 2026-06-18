@@ -49,7 +49,7 @@ const projects = [
     description: "Sistema inteligente de monitoramento de vagas de estacionamento utilizando Internet das Coisas (IoT). O sistema monitora automaticamente a ocupação das vagas através de sensores, permitindo a visualização em tempo real das vagas livres e ocupadas.",
     tech: "Arduino • IoT • Sensores • C++ • HTML • CSS • JavaScript",
     role: "Responsável pela integração entre sensores e aplicação web, implementação da lógica de monitoramento das vagas e exibição das informações em tempo real para os usuários.",
-    github: "https://github.com/Deividteck",
+    github: "https://github.com/Deividteck/Estacionamento-Iot",
     image: "images/projeto6.png"
   }
 ];
