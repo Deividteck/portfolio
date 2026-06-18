@@ -7,6 +7,7 @@ const projects = [
     github: "https://github.com/Byelsantos11/BPG",
     image: "images/projeto1.png"
   },
+
   {
     title: "Projeto Aparecida",
     description: "Sistema para controle de viagens e passagens voltado para igrejas.",
@@ -15,6 +16,7 @@ const projects = [
     github: "https://github.com/Deividteck/Pojeto-aparecida",
     image: "images/projeto2.png"
   },
+
   {
     title: "Loja de Brinquedos",
     description: "Aplicação web com funcionalidades completas de CRUD e integração com banco de dados.",
@@ -23,6 +25,7 @@ const projects = [
     github: "https://github.com/Deividteck/loja-de-brinquedos",
     image: "images/projeto3.png"
   },
+
   {
     title: "Pizzaria",
     description: "Sistema web para gerenciamento de pedidos, produtos e clientes.",
@@ -31,6 +34,7 @@ const projects = [
     github: "https://github.com/Deividteck/pizzaria",
     image: "images/projeto4.png"
   },
+
   {
     title: "Campo Minado",
     description: "Jogo clássico de lógica com geração dinâmica de tabuleiro.",
@@ -38,6 +42,15 @@ const projects = [
     role: "Desenvolvimento completo da lógica do jogo e interface.",
     github: "https://github.com/Deividteck/campo-minado",
     image: "images/projeto5.png"
+  },
+
+  {
+    title: "EstacioneIoT",
+    description: "Sistema inteligente de monitoramento de vagas de estacionamento utilizando Internet das Coisas (IoT). O sistema detecta automaticamente a ocupação das vagas através de sensores e exibe informações em tempo real para os usuários.",
+    tech: "Arduino • IoT • Sensores • C++ • HTML • CSS • JavaScript",
+    role: "Responsável pelo desenvolvimento da lógica de monitoramento das vagas, integração entre sensores IoT e aplicação web, além da exibição em tempo real do status das vagas.",
+    github: "https://github.com/Deividteck",
+    image: "images/projeto6.png"
   }
 ];
 
@@ -46,10 +59,21 @@ function showProject(i) {
 
   document.getElementById("details").innerHTML = `
     <h2>${p.title}</h2>
+
     <img src="${p.image}" class="project-image">
+
     <p>${p.description}</p>
+
     <p><strong>Tecnologias:</strong> ${p.tech}</p>
+
     <p><strong>Minha participação:</strong> ${p.role}</p>
-    <a href="${p.github}" target="_blank">🔗 Ver no GitHub</a>
+
+    <a href="${p.github}" target="_blank" class="btn">
+      🔗 Ver no GitHub
+    </a>
   `;
+
+  document.getElementById("details").scrollIntoView({
+    behavior: "smooth"
+  });
 }

@@ -1,99 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Deivid</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Deivid Da Silva Santos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="hero">
-  <img src="images/minha-foto.png" class="profile">
+    <header class="hero">
 
-  <h1>Deivid Da Silva Santos</h1>
-  <p>Desenvolvedor Fullstack • Node.js</p>
+        <img src="images/minha-foto.png" alt="Foto de Deivid" class="profile">
 
-  <a href="https://github.com/Deividteck" target="_blank" class="btn">
-    🔗 Meu GitHub
-  </a>
-</header>
+        <h1>Deivid Da Silva Santos</h1>
 
-<section class="about">
-  <h2>Sobre Mim</h2>
-  <p>
-    Desenvolvedor em formação com foco em backend utilizando Node.js. 
-    Possuo experiência no desenvolvimento de APIs REST, autenticação com JWT e integração com banco de dados MySQL.
-    Também atuo no desenvolvimento frontend, criando interfaces responsivas e funcionais.
-    Busco minha primeira oportunidade na área de tecnologia para aplicar e evoluir meus conhecimentos.
-  </p>
-</section>
+        <p class="subtitle">
+            Desenvolvedor Full Stack • Node.js • Java • Spring Boot
+        </p>
 
-<section class="info">
-  <h2>Formação</h2>
-  <p>📚 Fatec Itaquera</p>
-  <p>💻 Desenvolvimento de Software Multiplataforma</p>
-  <p>📅 Início: 2023</p>
-  <p>🎓 Previsão de conclusão: 2026</p>
-</section>
+        <a href="https://github.com/Deividteck" target="_blank" class="btn">
+            🔗 Meu GitHub
+        </a>
 
-<section class="info">
-  <h2>Experiência</h2>
-  <p>Atualmente em busca da primeira oportunidade na área de desenvolvimento de software.</p>
-</section>
+    </header>
 
-<section class="info">
-  <h2>Cursos</h2>
-  <p>JavaScript Completo - Udemy (40h) - 2025</p>
-  <p>Node.js e APIs REST - Alura (30h) - 2025</p>
-  <p>Banco de Dados MySQL - Curso Online (20h) - 2025</p>
-</section>
+    <section class="about">
+        <h2>Sobre Mim</h2>
 
-<section class="info">
-  <h2>Idiomas</h2>
-  <p>Português: Nativo</p>
-  <p>Inglês: intermediario</p>
-</section>
+        <p>
+            Sou estudante de Desenvolvimento de Software Multiplataforma na Fatec Itaquera,
+            apaixonado por tecnologia, desenvolvimento web, backend e Internet das Coisas (IoT).
 
-<section class="projects">
+            Possuo experiência na criação de APIs REST utilizando Node.js e Spring Boot,
+            integração com banco de dados MySQL e desenvolvimento de interfaces responsivas.
 
-  <div class="card" onclick="showProject(0)">
-    <img src="images/projeto1.png">
-    <div class="overlay">BPG Store</div>
-  </div>
+            Busco constantemente novos desafios para aprimorar minhas habilidades e contribuir
+            com soluções inovadoras.
+        </p>
 
-  <div class="card" onclick="showProject(1)">
-    <img src="images/projeto2.png">
-    <div class="overlay">Projeto Aparecida</div>
-  </div>
+    </section>
 
-  <div class="card" onclick="showProject(2)">
-    <img src="images/projeto3.png">
-    <div class="overlay">Loja de Brinquedos</div>
-  </div>
+    <section class="info">
 
-  <div class="card" onclick="showProject(3)">
-    <img src="images/projeto4.png">
-    <div class="overlay">Pizzaria</div>
-  </div>
+        <div class="info-card">
+            <h2>🎓 Formação</h2>
 
-  <div class="card" onclick="showProject(4)">
-    <img src="images/projeto5.png">
-    <div class="overlay">Campo Minado</div>
-  </div>
+            <p>Fatec Itaquera</p>
+            <p>Desenvolvimento de Software Multiplataforma</p>
+            <p>Início: 2023</p>
+            <p>Conclusão Prevista: 2026</p>
+        </div>
 
-</section>
+        <div class="info-card">
+            <h2>💼 Experiência</h2>
 
-<section id="details" class="details">
-  <p>Selecione um projeto</p>
-</section>
+            <p>
+                Atualmente em busca da primeira oportunidade profissional na área
+                de desenvolvimento de software.
+            </p>
+        </div>
 
-<footer>
-  <p>© 2026 • Deivid Santos</p>
-</footer>
+        <div class="info-card">
+            <h2>📚 Cursos</h2>
 
-<script src="script.js"></script>
+            <p>JavaScript Completo - Udemy (40h)</p>
+            <p>Node.js e APIs REST - Alura (30h)</p>
+            <p>Banco de Dados MySQL (20h)</p>
+        </div>
+
+        <div class="info-card">
+            <h2>🌎 Idiomas</h2>
+
+            <p>Português: Nativo</p>
+            <p>Inglês: Intermediário</p>
+        </div>
+
+    </section>
+
+    <section class="projects">
+
+        <h2 class="title-section">Projetos</h2>
+
+        <div class="card" onclick="showProject(0)">
+            <img src="images/projeto1.png" alt="">
+            <div class="overlay">BPG Store</div>
+        </div>
+
+        <div class="card" onclick="showProject(1)">
+            <img src="images/projeto2.png" alt="">
+            <div class="overlay">Projeto Aparecida</div>
+        </div>
+
+        <div class="card" onclick="showProject(2)">
+            <img src="images/projeto3.png" alt="">
+            <div class="overlay">Loja de Brinquedos</div>
+        </div>
+
+        <div class="card" onclick="showProject(3)">
+            <img src="images/projeto4.png" alt="">
+            <div class="overlay">Pizzaria</div>
+        </div>
+
+        <div class="card" onclick="showProject(4)">
+            <img src="images/projeto5.png" alt="">
+            <div class="overlay">Campo Minado</div>
+        </div>
+
+        <div class="card" onclick="showProject(5)">
+            <img src="images/projeto6.png" alt="">
+            <div class="overlay">EstacioneIoT</div>
+        </div>
+
+    </section>
+
+    <section id="details" class="details">
+
+        <h2>🚀 Meus Projetos</h2>
+
+        <p>
+            Clique em um dos projetos acima para visualizar detalhes,
+            tecnologias utilizadas e minha participação no desenvolvimento.
+        </p>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 • Deivid Da Silva Santos
+        </p>
+
+        <p>
+            Fatec Itaquera • Desenvolvimento de Software Multiplataforma
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
